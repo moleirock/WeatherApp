@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" type="module" defer></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <header class="container">
+        <h1 class="title">OpenWeatherMap API</h1>
+    </header>
+    <nav class="container navigation">
+        <div class="fields">
+            <div class="field">
+                <label for="latitude" class="field__text">Latitude</label>
+                <input type="text" name="latitude" inputmode="numeric" id="latitude" aria-label="latitude"
+                    value="40.67348590">
+            </div>
+            <div class="field">
+                <label for="longitude" class="field__text">Longitude</label>
+                <input type="text" name="longitude" inputmode="numeric" id="longitude" aria-label="latitude"
+                    value="-4.09073230">
+            </div>
+        </div>
+        <div class="controls">
+            <button id="btnGet" type="button" class="btn">
+                Get Weather
+            </button>
+            <button id="btnCurrent" type="button" class="btn">
+                Use Current Location
+            </button>
+        </div>
+    </nav>
+    <main class="container">
+        <h2 class="title">Weather</h2>      
+            <div class="weather__card" id="weatherCard">
+                <h5 >Date</h5>
+                <img src="http://openweathermap.org/img/wn/10d@4x.png" class="" alt="Weather description" />
+                <div class="weather__info">
+                    <h3>Weather Label</h3>
+                    <p>High Temp Low Temp</p>
+                    <p>HighFeels like</p>
+                    <p>Pressure</p>
+                    <p>Humidty</p>
+                    <p>Wind speed and direction</p>
+                    <p>Sunrise</p>
+                    <p>Sunset</p>
+                </div>
+                
+            </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+html {
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: #333;
+    background: #f4f4f4;
+    height: 100vh;
+}
+img{
+    margin: 0 auto;
+    display: block;
+}
+p{
+    font-size: 1.8rem;
+}
+.container {
+    /* width: 100%; */
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Navigation */
+.navigation{
+    width: fit-content;
+    margin: 0 auto;
+    border: rgb(133, 133, 133) solid 1px;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: #fff;
+}
+.fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.field {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.field__text{
+    font-weight: 700;
+}
+
+input{
+    padding:.5rem 1rem;
+    border: rgb(133, 133, 133) solid 1px;
+    border-radius: .5rem;
+    font-size: 2rem;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn{
+    font-size: 1.8rem;
+    padding: .5rem 1rem;
+    border: unset;
+    border-radius: .5rem;
+    background: rgb(0, 110, 255);
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.btn:hover{
+    background: rgb(0, 90, 255);
+    transform: scale(1.05);
+    
+}
+.weather__card{
+    max-width: 40%;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border: rgb(133, 133, 133) solid 1px;
+    border-radius: 1rem;
+    background: #fff;
+}
+.weather__info{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
